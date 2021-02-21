@@ -101,11 +101,22 @@ tr:hover {background-color: rgba(126, 8, 32, 0.25);}
 table{
     border: 2px solid #000000;
     margin: auto;
+    border-radius:10px;
 }
 
-thead tr:first-child th:first-child{}
+td:first-child {
+  border-radius: 5px 0 0 0 !important;
+}
+td:last-child {
+  border-radius: 0 5px 0 0 !important;
+}
+tr:last-child td:first-child {
+  border-radius: 0 0 0 5px !important;
+}
+tr:last-child td:last-child {
+  border-radius: 0 0 5px 0 !important;
+}
 
-/*Add selectors and rules here*/
 
 
 /*Req 8*/
